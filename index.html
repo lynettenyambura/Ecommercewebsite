@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Ecommerce website</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    
+                </div>
+                <nav>
+                    <ul id="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#list-products">Products</a></li>
+                        
+                        <img class="cart-icon" src="images/cart.png" alt="" width="30px" height="30px" onclick="toggleCart()">
+                        <span id="cart-count" class="cart-count">0</span>
+                    </ul>
+                </nav>
+                <div id="cart" class="hidden">
+                    <h2>Cart</h2>
+                    <div id="cart-items"></div>
+                    <p id="cart-total">Total: <span id="total-amount">0</span></p>
+                    <button id="clear-cart-button" onclick="clearCart()">Clear Cart</button>
+                </div>
+                <img class="menu-icon" src="images/menu.png" onclick="menutoggle()">
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    
+                    <a href="#list-products" class="btn">Shop</a>
+                </div>
+
+                <div class="col-2">
+                    <img src="images/Coming soon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title">Affordable online shopping</h2>
+
+    <div class="products-container" id="list-products">
+        <div class="filter row-2">
+            
+            <select id="categorySelect">
+                <option value="">All Categories</option>
+            </select>
+        </div>
+
+        <div class="products">
+            <div class="product"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+
